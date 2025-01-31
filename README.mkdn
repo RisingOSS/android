@@ -12,13 +12,13 @@ Base Firmware
 
 Maintainership
 ---------------
-We're short in manpower right now (core members are busy with maintaining source and can't review applicants). Maintainership is closed until source workload is low.
+This is a fork of Rising OS with no initial plans for maintainership.
  
 Getting Started
 ---------------
 **Initialize local repository**
 ```bash
-repo init -u https://github.com/RisingTechOSS/android -b fifteen --git-lfs
+repo init -u https://github.com/risingOSS/android -b main --git-lfs
 ```
 
 **Sync up with this command:**
@@ -35,16 +35,16 @@ rm -rf vendor/gms
 rm -rf .repo/projects/vendor/gms.git
 rm -rf .repo/project-objects/*/android_vendor_gms.git
 
-repo init -u https://github.com/RisingTechOSS/android -b fifteen --git-lfs
+repo init -u https://github.com/risingOSS/android -b main --git-lfs
 
 # for SSH
-repo init -u git@github.com:RisingTechOSS/android.git -b fifteen --git-lfs 
+repo init -u git@github.com:risingOSS/android.git -b main --git-lfs 
 
 ```
 
 Preparing device for building risingOS
 ---------------
-**Inherit LineageOS Vendor stuffs**
+**Inherit LineageOS Vendor stuff**
 ```bash
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 ```
@@ -192,10 +192,6 @@ remove_keys # This will remove generated keys so the system will revert back to 
 ```bash
 rise help
 ```
-
-Bug Reports/Issue Tracker
----------------
-[**Issue Tracker**](https://github.com/RisingTechOSS/issue_tracker)
 
 Contributions/Translations
 ---------------

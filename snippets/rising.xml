@@ -8,7 +8,7 @@
           revision="refs/heads/fifteen" />
 
   <remote name="rising"
-          fetch="https://github.com/RisingTechOSS/"
+          fetch="https://github.com/risingOSS/"
           sync-c="true"
           sync-j="4"
           revision="refs/heads/fifteen" />
@@ -121,11 +121,11 @@
   <project path="external/tigervnc" name="android_external_tigervnc" groups="pdk" remote="rising" />
 
   <!-- Frameworks  -->
-  <project path="frameworks/av" name="android_frameworks_av" groups="pdk-cw-fs,pdk-fs" remote="rising" />
-  <project path="frameworks/base" name="android_frameworks_base_new" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="rising" />
-  <project path="frameworks/libs/systemui" name="android_frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="rising" />
-  <project path="frameworks/native" name="android_frameworks_native" groups="pdk-cw-fs,pdk-fs" remote="rising" />
-  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" groups="pdk" remote="rising" />
+  <project path="frameworks/av" name="frameworks_av" groups="pdk-cw-fs,pdk-fs" remote="rising" />
+  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="rising" />
+  <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="rising" />
+  <project path="frameworks/native" name="frameworks_native" groups="pdk-cw-fs,pdk-fs" remote="rising" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk" remote="rising" />
 
   <!-- Hardware  -->
   <project path="hardware/google/graphics/common" name="android_hardware_google_graphics_common" groups="pdk-lassen,pdk-gs-arm" remote="rising" />
@@ -174,11 +174,11 @@
   <project path="system/update_engine" name="android_system_update_engine" groups="pdk" remote="rising" />
 
   <!-- Vendor  -->
-  <project path="vendor/addons" name="android_vendor_addons" remote="rising" />
+  <project path="vendor/addons" name="vendor_addons" remote="rising" />
   <project path="vendor/gms" name="android_vendor_gms" remote="gitlab" />
-  <project path="vendor/lineage" name="android_vendor_lineage" remote="rising" />
-  <project path="vendor/rising" name="android_vendor_rising" groups="pdk-fs" remote="rising" />
+  <project path="vendor/lineage" name="vendor_lineage" remote="rising" />
+  <project path="vendor/rising" name="vendor_rising" groups="pdk-fs" remote="rising" />
   <project path="vendor/official_devices" name="official_devices" remote="devices" />
-  <project path="vendor/pixel-framework" name="android_vendor_pixel-framework" remote="rising" />
-  <project path="vendor/pixeloverlays" name="android_vendor_pixeloverlays" remote="rising" />
+  <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="rising" />
+  <project path="vendor/pixeloverlays" name="vendor_pixeloverlays" remote="rising" />
 </manifest>
